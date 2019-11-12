@@ -19,7 +19,7 @@ class CashRegister
     if @discount != 0
       percent = 1 - @discount.to_f/100
       @total = @total * percent
-      return "After the discount, the total comes to $#{@total}."
+      return "After the discount, the total comes to $#{@total.to_s.chomp(.0)}."
     else 
       "There is no discount to apply."
     end
