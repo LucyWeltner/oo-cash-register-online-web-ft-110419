@@ -1,4 +1,4 @@
 class CashRegister
-  @@money = []
+  @@total = []
   def 
 end
